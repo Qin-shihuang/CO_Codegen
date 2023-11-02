@@ -4,6 +4,6 @@ import Instructions.Rtype;
 
 public class Sub extends Rtype {
     public Sub() {
-        super("subu", randomRegister(), randomRegister(), randomRegister());
+        super("sub", randomRegister(), randomRegister(), randomRegister());
     }
 }

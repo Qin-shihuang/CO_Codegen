@@ -13,9 +13,9 @@ public class InstrFactory {
             case 1:
                 return getSubNoArg();
             case 2:
-                return getAddNoArg();
+                return getAdduNoArg();
             case 3:
-                return getSubNoArg();
+                return getSubuNoArg();
             case 4:
                 return getOriNoArg();
             case 5:
@@ -61,8 +61,16 @@ public class InstrFactory {
         return new Instructions.R_type.Add();
     }
 
+    public static Instruction getAdduNoArg() {
+        return new Instructions.R_type.Addu();
+    }
+
     public static Instruction getSubNoArg() {
         return new Instructions.R_type.Sub();
+    }
+
+    public static Instruction getSubuNoArg() {
+        return new Instructions.R_type.Subu();
     }
 
     public static Instruction getBeqNoArg() {

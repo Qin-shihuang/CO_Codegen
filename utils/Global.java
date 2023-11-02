@@ -13,8 +13,8 @@ public class Global {
         {
             put("ADD", 0);
             put("SUB", 1);
-            put("ADDU", 0);
-            put("SUBU", 1);
+            put("ADDU", 2);
+            put("SUBU", 3);
             put("ORI", 4);
             put("LW", 5);
             put("SW", 6);
