@@ -1,8 +1,11 @@
+package utils;
+
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.ArrayList;
 import java.io.File;
 
-public class GlobalConfig {
+public class Global {
     private static final int memorySize = 1024;
     private static final HashMap<String, Integer> supportedInstructions = new HashMap<>() {
         {
@@ -56,9 +59,10 @@ public class GlobalConfig {
             put(31, "$ra");
         }
     };
-    private static ArrayList<Integer> instructions = new ArrayList<>();
+    private static ArrayList<Integer> availableInstructions = new ArrayList<>();
     private static int maxInstructions = 1000;
     private static File output = null;
+    private static HashSet<String> linkedRegisters = new HashSet<>();
 
     public static final HashMap<String, Integer> getSupportedInstructions() {
         return supportedInstructions;
@@ -69,7 +73,7 @@ public class GlobalConfig {
     }
 
     public static void setMaxInstructions(int maxInstructions) {
-        GlobalConfig.maxInstructions = maxInstructions;
+        Global.maxInstructions = maxInstructions;
     }
 
     public static int getMaxInstructions() {
@@ -77,15 +81,15 @@ public class GlobalConfig {
     }
 
     public static void addInstruction(String instruction) {
-        instructions.add(supportedInstructions.get(instruction));
+        availableInstructions.add(supportedInstructions.get(instruction));
     }
 
-    public static ArrayList<Integer> getInstructions() {
-        return instructions;
+    public static ArrayList<Integer> getAvailableInstructions() {
+        return availableInstructions;
     }
 
     public static void setOutput(File output) {
-        GlobalConfig.output = output;
+        Global.output = output;
     }
 
     public static File getOutput() {
@@ -94,5 +98,29 @@ public class GlobalConfig {
 
     public static String getRegisterName(int register) {
         return RegisterNames.get(register);
+    }
+
+    public static void addLinkedRegister(String register) {
+        linkedRegisters.add(register);
+    }
+
+    public static void removeLinkedRegister(String register) {
+        linkedRegisters.remove(register);
+    }
+
+    public static boolean isLinkedRegisterEmpty() {
+        return linkedRegisters.isEmpty();
+    }
+
+    public static String getRamdomLinkedRegister() {
+        int size = linkedRegisters.size();
+        int item = (int) (Math.random() * size);
+        int i = 0;
+        for (String register : linkedRegisters) {
+            if (i == item)
+                return register;
+            i++;
+        }
+        return null;
     }
 }

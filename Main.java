@@ -1,4 +1,7 @@
 import java.util.Scanner;
+
+import utils.Global;
+
 import java.io.File;
 
 public class Main {
@@ -51,14 +54,14 @@ public class Main {
                 continue;
             }
             if (line.split("=")[0].equals("MaxInstr")) {
-                GlobalConfig.setMaxInstructions(Integer.parseInt(line.split("=")[1]));
+                Global.setMaxInstructions(Integer.parseInt(line.split("=")[1]));
             } else if (line.split("=")[0].equals("InstrSet")) {
                 String[] instrs = line.split("=")[1].split(" ");
                 for (String instr : instrs) {
-                    GlobalConfig.addInstruction(instr.toUpperCase());
+                    Global.addInstruction(instr.toUpperCase());
                 }
             } else if (line.split("=")[0].equals("Output")) {
-                GlobalConfig.setOutput(new File(line.split("=")[1]));
+                Global.setOutput(new File(line.split("=")[1]));
             }
         }
     }
