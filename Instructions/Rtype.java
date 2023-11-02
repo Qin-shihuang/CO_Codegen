@@ -5,8 +5,8 @@ public abstract class Rtype extends Instruction {
     protected String rt;
     protected String rd;
 
-    public Rtype(int currentLine, String name, String rs, String rt, String rd) {
-        super(currentLine, name);
+    public Rtype(String name, String rs, String rt, String rd) {
+        super(name);
         this.rs = rs;
         this.rt = rt;
         this.rd = rd;

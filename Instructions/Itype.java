@@ -5,7 +5,6 @@ public abstract class Itype extends Instruction {
     protected String rs;
     protected String rt;
     protected String immediate_label;
-    protected String label;
 
     public Itype(int currentLine, String name, int type, String rs, String rt, String immediate_label) {
         super(currentLine, name);
@@ -13,14 +12,6 @@ public abstract class Itype extends Instruction {
         this.rs = rs;
         this.rt = rt;
         this.immediate_label = immediate_label;
-    }
-
-    protected void setLabel(String label) {
-        this.label = label;
-    }
-
-    public String getLabel() {
-        return this.label;
     }
 
     @Override

@@ -63,7 +63,7 @@ public class Global {
     };
     private static ArrayList<Integer> availableInstructions = new ArrayList<>();
     private static int maxInstructions = 1000;
-    private static File output = null;
+    private static File output = new File("output.asm");
     private static HashSet<String> linkedRegisters = new HashSet<>();
 
     public static final HashMap<String, Integer> getSupportedInstructions() {

@@ -5,12 +5,14 @@ import Instructions.Instruction;
 
 public class Jr extends Instruction {
     private String rs;
+
     public Jr() {
-        super(Global.getCurrentLine(), "jr");
+        super("jr");
         rs = randomJumpableRegister();
     }
+
     public Jr(String rs) {
-        super(Global.getCurrentLine(), "jr");
+        super("jr");
         this.rs = rs;
     }
 

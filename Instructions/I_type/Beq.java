@@ -5,11 +5,11 @@ import Instructions.Itype;
 
 public class Beq extends Itype {
     public Beq() {
-        super(Global.getCurrentLine(), "beq", 2, randomRegister(), randomRegister(), label());
+        super("beq", 2, randomRegister(), randomRegister(), label());
     }
 
     public Beq(String rs, String rt, String label) {
-        super(Global.getCurrentLine(), "beq", 2, rs, rt, label);
+        super("beq", 2, rs, rt, label);
     }
 
     private static String label() {

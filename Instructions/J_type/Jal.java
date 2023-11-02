@@ -6,11 +6,11 @@ import Instructions.Jtype;
 public class Jal extends Jtype {
 
     public Jal() {
-        super(Global.getCurrentLine(), "jal", label());
+        super("jal", label());
     }
 
     public Jal(String label) {
-        super(Global.getCurrentLine(), "jal", label);
+        super("jal", label);
     }
     
     private static String label() {

@@ -5,6 +5,6 @@ import Instructions.Rtype;
 
 public class Add extends Rtype {
     public Add() {
-        super(Global.getCurrentLine(), "add", randomRegister(), randomRegister(), randomRegister());
+        super("add", randomRegister(), randomRegister(), randomRegister());
     }
 }

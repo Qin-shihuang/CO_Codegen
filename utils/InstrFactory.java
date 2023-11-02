@@ -37,17 +37,6 @@ public class InstrFactory {
         }
     }
 
-    public static Instruction getOriLui(int Id, String rs, String rt) {
-        switch (Id) {
-            case 4:
-                return getOri(rs, rt);
-            case 8:
-                return getLui(rs, rt);
-            default:
-                return null;
-        }
-    }
-
     public static Instruction getNopNoArg() {
         return new Instructions.Others.Nop();
     }
@@ -85,18 +74,18 @@ public class InstrFactory {
     }
 
     public static Instruction getLuiNoArg() {
-        return new Instructions.I_type.Lui();
+        return new Instructions.Others.Lui();
     }
 
-    public static Instruction getLui(String rs, String rt) {
-        return new Instructions.I_type.Lui(rs, rt);
+    public static Instruction getLui(String rt) {
+        return new Instructions.Others.Lui(rt);
     }
 
-    public static Instruction getOriNoArg(){
+    public static Instruction getOriNoArg() {
         return new Instructions.I_type.Ori();
     }
 
-    public static Instruction getOri(String rs, String rt){
+    public static Instruction getOri(String rs, String rt) {
         return new Instructions.I_type.Ori(rs, rt);
     }
 

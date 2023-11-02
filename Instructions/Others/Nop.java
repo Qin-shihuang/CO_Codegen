@@ -5,7 +5,7 @@ import Instructions.Instruction;
 
 public class Nop extends Instruction {
     public Nop() {
-        super(Global.getCurrentLine(), "nop");
+        super("nop");
     }
 
     @Override

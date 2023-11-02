@@ -47,14 +47,14 @@ public class Main {
             if (line.charAt(0) == '#') {
                 continue;
             }
-            if (line.split("=")[0].equals("MaxInstr")) {
-                Global.setMaxInstructions(Integer.parseInt(line.split("=")[1]));
+            if (line.split("=")[0].trim().equals("MaxInstr")) {
+                Global.setMaxInstructions(Integer.parseInt(line.split("=")[1].trim()));
             } else if (line.split("=")[0].trim().equals("InstrSet")) {
-                String[] instrs = line.split("=")[1].split(" ");
+                String[] instrs = line.split("=")[1].trim().split(" ");
                 for (String instr : instrs) {
                     Global.addInstruction(instr.toUpperCase());
                 }
-            } else if (line.split("=")[0].trim().equals("Output")) {
+            } else if (line.split("=")[0].trim().equals("OutputFile")) {
                 Global.setOutput(new File(line.split("=")[1].trim()));
             }
         }

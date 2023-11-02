@@ -4,7 +4,7 @@ import utils.Global;
 
 public abstract class Instruction {
     protected final String name;
-    protected final int currentLine;
+    protected final int currentLine =Global.getCurrentLine();
     /*
      * 0: R-type
      * add, sub
@@ -27,8 +27,7 @@ public abstract class Instruction {
      * 6: NOP
      * nop
      */
-    public Instruction(int currentLine, String name) {
-        this.currentLine = currentLine;
+    public Instruction(String name) {
         this.name = name;
     }
 
