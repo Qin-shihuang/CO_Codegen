@@ -3,16 +3,18 @@ package utils;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 import java.io.File;
 
 public class Global {
+    private static int currentLine = 0;
     private static final int memorySize = 1024;
     private static final HashMap<String, Integer> supportedInstructions = new HashMap<>() {
         {
             put("ADD", 0);
             put("SUB", 1);
-            put("ADDU", 2);
-            put("SUBU", 3);
+            put("ADDU", 0);
+            put("SUBU", 1);
             put("ORI", 4);
             put("LW", 5);
             put("SW", 6);
@@ -114,7 +116,7 @@ public class Global {
 
     public static String getRamdomLinkedRegister() {
         int size = linkedRegisters.size();
-        int item = (int) (Math.random() * size);
+        int item = getRandom(0, size - 1);
         int i = 0;
         for (String register : linkedRegisters) {
             if (i == item)
@@ -122,5 +124,17 @@ public class Global {
             i++;
         }
         return null;
+    }
+
+    public static void setCurrentLine(int currentLine) {
+        Global.currentLine = currentLine;
+    }
+
+    public static int getCurrentLine() {
+        return currentLine;
+    }
+
+    public static int getRandom(int min, int max) {
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 }

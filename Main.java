@@ -20,12 +20,9 @@ public class Main {
             System.exit(1);
         }
         String line = null;
-        while (true) {
+        while (scanner.hasNextLine()) {
             line = scanner.nextLine().trim();
-            if (line == null) {
-                break;
-            }
-            if (line.length() == 0) {
+            if (line.isEmpty()) {
                 continue;
             }
             if (line.charAt(0) == '#') {
@@ -42,12 +39,9 @@ public class Main {
 
     private static void readConfig(Scanner scanner) {
         String line = null;
-        while (true) {
+        while (scanner.hasNextLine()) {
             line = scanner.nextLine().trim();
-            if (line == null) {
-                break;
-            }
-            if (line.length() == 0) {
+            if (line.isEmpty()) {
                 continue;
             }
             if (line.charAt(0) == '#') {
