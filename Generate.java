@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import utils.Global;
 import utils.InstrFactory;
@@ -48,8 +49,43 @@ public class Generate {
             instructions.add(InstrFactory.getInstructionNoArg(instrId));
             curLine++;
         }
-
+        int selectedLabelCount = ((maxLine - 50) / 50 + 1) * 5;
+        HashSet<Integer> selectedLabels = new HashSet<>();
+        while (selectedLabels.size() < selectedLabelCount) {
+            selectedLabels.add(Global.getRandom(50, maxLine - 1));
+        }
+        ArrayList<Integer> selectedLabelsList = new ArrayList<>(selectedLabels);
+        selectedLabelsList.sort(Comparator.naturalOrder());
+        for (int i = 0; i < selectedLabelCount; i += 5) {
+            int pattern = Global.getRandom(0, 2);
+            if (pattern == 0) {
+                Global.setCurrentLine(selectedLabelsList.get(i));
+                instructions.set(selectedLabelsList.get(i),
+                        InstrFactory.getJal(getLabel(selectedLabelsList.get(i + 2)))); // L1:jal L3
+                Global.setCurrentLine(selectedLabelsList.get(i + 1));
+                instructions.set(selectedLabelsList.get(i + 1),
+                        InstrFactory.getBeq(Global.getRegisterName(0), Global.getRegisterName(0),
+                                getLabel(selectedLabelsList.get(i + 4)))); // L2:beq $zero,$zero,L5
+                Global.setCurrentLine(selectedLabelsList.get(i + 3));
+                instructions.set(selectedLabelsList.get(i + 3),
+                        InstrFactory.getJr(Global.getRegisterName(31))); // L4:jr $ra
+            } else {
+                Global.setCurrentLine(selectedLabelsList.get(i));
+                instructions.set(selectedLabelsList.get(i),
+                        InstrFactory.getBeq(Global.getRegisterName(0), Global.getRegisterName(0),
+                                getLabel(selectedLabelsList.get(i + 3))));
+                Global.setCurrentLine(selectedLabelsList.get(i + 2));
+                instructions.set(selectedLabelsList.get(i + 2),
+                        InstrFactory.getJr(Global.getRegisterName(31)));
+                Global.setCurrentLine(selectedLabelsList.get(i + 4));
+                instructions.set(selectedLabelsList.get(i + 4),
+                        InstrFactory.getJal(getLabel(selectedLabelsList.get(i + 1))));
+            }
+        }
         Print.printToFile(instructions);
     }
 
+    private static String getLabel(int line) {
+        return "L" + line;
+    }
 }

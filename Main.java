@@ -3,7 +3,6 @@ import java.util.Scanner;
 import utils.Global;
 import java.io.File;
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -28,6 +27,7 @@ public class Main {
             if (line.charAt(0) == '#') {
                 continue;
             }
+            line = line.split("#")[0].trim();
             if (line.equals("[Config]")) {
                 readConfig(scanner);
                 break;
@@ -47,6 +47,7 @@ public class Main {
             if (line.charAt(0) == '#') {
                 continue;
             }
+            line = line.split("#")[0].trim();
             if (line.split("=")[0].trim().equals("MaxInstr")) {
                 Global.setMaxInstructions(Integer.parseInt(line.split("=")[1].trim()));
             } else if (line.split("=")[0].trim().equals("InstrSet")) {

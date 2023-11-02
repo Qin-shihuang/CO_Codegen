@@ -1,6 +1,5 @@
 package Instructions.Others;
 
-import utils.Global;
 import Instructions.Instruction;
 
 public class Nop extends Instruction {

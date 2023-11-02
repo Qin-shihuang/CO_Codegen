@@ -6,8 +6,8 @@ public abstract class Itype extends Instruction {
     protected String rt;
     protected String immediate_label;
 
-    public Itype(int currentLine, String name, int type, String rs, String rt, String immediate_label) {
-        super(currentLine, name);
+    public Itype(String name, int type, String rs, String rt, String immediate_label) {
+        super(name);
         this.type = type;
         this.rs = rs;
         this.rt = rt;

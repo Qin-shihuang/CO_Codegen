@@ -8,8 +8,9 @@ public class Sw extends Itype {
         super("sw", 1, Zero(), randomRegister(), randomImmediate());
     }
 
-    // 0x000-0x7ffd, imm%4 = 0
     private static String randomImmediate() {
-        return (Global.getRandom(0, 0x1000) & 0xfffffffc) + "";
+        int RandOffset = Global.getRandom(0, 0x2ffc) & 0xfffffffc;
+        Global.addWrittenMemoryOffset(RandOffset);
+        return Integer.toString(RandOffset);
     }
 }

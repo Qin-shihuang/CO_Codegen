@@ -65,6 +65,7 @@ public class Global {
     private static int maxInstructions = 1000;
     private static File output = new File("output.asm");
     private static HashSet<String> linkedRegisters = new HashSet<>();
+    private static HashSet<Integer> WrittenMemoryOffset = new HashSet<>();
 
     public static final HashMap<String, Integer> getSupportedInstructions() {
         return supportedInstructions;
@@ -136,5 +137,25 @@ public class Global {
 
     public static int getRandom(int min, int max) {
         return ThreadLocalRandom.current().nextInt(min, max + 1);
+    }
+
+    public static void addWrittenMemoryOffset(int offset) {
+        WrittenMemoryOffset.add(offset);
+    }
+
+    public static boolean isWrittenMemoryOffsetEmpty() {
+        return WrittenMemoryOffset.isEmpty();
+    }
+
+    public static int getRamdomWrittenMemoryOffset() {
+        int size = WrittenMemoryOffset.size();
+        int item = getRandom(0, size - 1);
+        int i = 0;
+        for (int offset : WrittenMemoryOffset) {
+            if (i == item)
+                return offset;
+            i++;
+        }
+        return 0;
     }
 }
