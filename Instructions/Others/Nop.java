@@ -1,7 +1,7 @@
 package Instructions.Others;
 
-import Instructions.Instruction;
 import utils.Global;
+import Instructions.Instruction;
 
 public class Nop extends Instruction {
     public Nop() {

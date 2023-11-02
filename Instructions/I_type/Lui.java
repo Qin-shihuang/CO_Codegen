@@ -8,6 +8,10 @@ public class Lui extends Itype {
         super(Global.getCurrentLine(), "lui", 0, randomRegister(), randomRegister(), randomImmediate());
     }
 
+    public Lui(String rs, String rt) {
+        super(Global.getCurrentLine(), "lui", 0, rs, rt, randomImmediate());
+    }
+
     private static String randomImmediate() {
         return Global.getRandom(0, 0xffff) + "";
     }

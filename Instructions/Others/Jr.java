@@ -1,17 +1,21 @@
 package Instructions.Others;
 
-import Instructions.Instruction;
 import utils.Global;
+import Instructions.Instruction;
 
 public class Jr extends Instruction {
     private String rs;
     public Jr() {
         super(Global.getCurrentLine(), "jr");
-        rs = randomRegister();
+        rs = randomJumpableRegister();
     }
     public Jr(String rs) {
         super(Global.getCurrentLine(), "jr");
         this.rs = rs;
+    }
+
+    public static String randomJumpableRegister() {
+        return Global.getRamdomLinkedRegister();
     }
 
     @Override

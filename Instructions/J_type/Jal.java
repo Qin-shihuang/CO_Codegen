@@ -1,7 +1,7 @@
 package Instructions.J_type;
 
-import Instructions.Jtype;
 import utils.Global;
+import Instructions.Jtype;
 
 public class Jal extends Jtype {
 

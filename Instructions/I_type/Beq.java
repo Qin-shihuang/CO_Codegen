@@ -1,7 +1,7 @@
 package Instructions.I_type;
 
-import Instructions.Itype;
 import utils.Global;
+import Instructions.Itype;
 
 public class Beq extends Itype {
     public Beq() {

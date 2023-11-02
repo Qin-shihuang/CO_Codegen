@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import Instructions.Instruction;
 
 public class Print {
-    public void printToFile(ArrayList<Instruction> instructions) {
+    public static void printToFile(ArrayList<Instruction> instructions) {
         try {
             File output = Global.getOutput();
             FileWriter writer = new FileWriter(output);
