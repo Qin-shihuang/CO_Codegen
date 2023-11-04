@@ -1,0 +1,1518 @@
+num_labels:  5  instr_case:  1
+passed:  38 / 5752
+******
+jal 3
+jal 4
+jr
+nop
+nop
+******
+jal 4
+nop
+jr
+jal 5
+jal 2
+******
+jal 3
+jr
+jal 4
+jal 5
+jal 2
+******
+jal 3
+jr
+nop
+jal 2
+nop
+******
+jal 4
+jal 5
+jr
+jal 2
+jal 3
+******
+jal 3
+jr
+jal 2
+nop
+nop
+******
+nop
+jal 3
+jal 5
+jr
+jal 4
+******
+jal 4
+nop
+jal 5
+jr
+nop
+******
+jal 3
+jr
+jal 2
+jal 5
+nop
+******
+nop
+jal 4
+jr
+nop
+jal 3
+******
+jal 4
+jal 3
+jal 5
+jr
+nop
+******
+jal 3
+jal 5
+nop
+jr
+nop
+******
+jal 3
+jr
+jal 4
+nop
+jal 2
+******
+jal 2
+jal 4
+jal 5
+jr
+nop
+******
+nop
+jal 4
+jr
+jal 5
+jal 3
+******
+jal 2
+jal 5
+nop
+jr
+jal 3
+******
+jal 2
+jal 3
+jal 5
+jr
+jal 4
+******
+jal 2
+jal 4
+jr
+jal 5
+jal 3
+******
+jal 4
+jr
+jr
+jal 3
+jal 2
+******
+jal 4
+nop
+jr
+jal 2
+nop
+******
+jal 5
+nop
+nop
+jr
+jal 2
+******
+jal 3
+jal 5
+jal 2
+jr
+jal 4
+******
+jal 3
+jr
+nop
+nop
+jal 2
+******
+jal 4
+jr
+jr
+jal 2
+jal 3
+******
+jal 2
+jal 4
+jr
+jal 3
+nop
+******
+jal 3
+jr
+nop
+jal 5
+jal 2
+******
+nop
+jal 4
+jr
+jal 3
+nop
+******
+jal 3
+jal 4
+jr
+jal 5
+nop
+******
+nop
+jal 5
+nop
+jr
+jal 3
+******
+jal 4
+jal 5
+jr
+jr
+jal 3
+******
+jal 2
+jal 4
+jr
+nop
+jal 3
+******
+nop
+jal 4
+jal 5
+jr
+nop
+******
+nop
+nop
+jal 5
+jr
+jal 4
+******
+jal 3
+jr
+jal 4
+jal 2
+nop
+******
+jal 3
+jal 5
+jr
+jr
+jal 4
+******
+jal 2
+nop
+jal 5
+jr
+jal 4
+******
+jal 4
+jr
+jal 5
+jal 3
+jal 2
+******
+jal 4
+nop
+jr
+nop
+jal 2
+
+num_labels:  5  instr_case:  2
+passed:  214 / 49472
+******
+jal 2
+jal 5
+j 4
+jr
+jal 3
+******
+jal 4
+nop
+jr
+j 5
+jal 2
+******
+j 3
+jr
+jal 4
+nop
+jal 2
+******
+jal 3
+jr
+jal 4
+jal 5
+jal 2
+******
+j 4
+jr
+j 5
+j 3
+jal 2
+******
+j 2
+j 4
+jr
+j 5
+jal 3
+******
+j 3
+jr
+nop
+nop
+jal 2
+******
+jal 4
+jal 5
+jr
+j 3
+nop
+******
+j 4
+jr
+jal 5
+j 3
+jal 2
+******
+j 3
+jal 5
+j 2
+jr
+jal 4
+******
+j 4
+jr
+jr
+jal 3
+jal 2
+******
+jal 5
+jr
+j 4
+j 2
+jal 3
+******
+jal 3
+j 4
+jr
+nop
+nop
+******
+jal 3
+j 5
+jr
+jr
+jal 4
+******
+jal 3
+j 4
+j 5
+jr
+jal 2
+******
+j 3
+jr
+j 4
+j 5
+jal 2
+******
+jal 2
+jal 4
+jal 5
+jr
+nop
+******
+j 3
+j 5
+j 4
+j 2
+nop
+******
+jal 4
+nop
+jr
+jal 2
+nop
+******
+jal 3
+j 5
+j 2
+jr
+jal 4
+******
+j 3
+jr
+jal 4
+jal 5
+jal 2
+******
+jal 5
+j 4
+j 2
+jr
+jal 3
+******
+j 5
+nop
+jr
+j 2
+jal 4
+******
+j 2
+j 3
+j 4
+nop
+nop
+******
+nop
+jal 5
+nop
+jr
+jal 3
+******
+nop
+nop
+j 5
+jr
+jal 4
+******
+jal 3
+j 4
+jr
+jal 5
+nop
+******
+jal 3
+j 4
+jal 5
+jr
+jal 2
+******
+j 4
+jal 5
+jr
+jal 2
+jal 3
+******
+j 3
+jr
+jal 2
+jal 5
+nop
+******
+j 2
+j 3
+jal 5
+jr
+jal 4
+******
+jal 2
+jal 4
+j 5
+jr
+nop
+******
+j 4
+j 3
+j 5
+j 2
+nop
+******
+nop
+j 4
+jr
+nop
+jal 3
+******
+jal 5
+j 3
+j 4
+jr
+jal 2
+******
+jal 4
+nop
+jr
+nop
+jal 2
+******
+nop
+j 4
+jr
+jal 5
+jal 3
+******
+jal 4
+nop
+jr
+jal 5
+jal 2
+******
+j 4
+jr
+j 2
+nop
+jal 3
+******
+jal 2
+j 5
+nop
+jr
+jal 3
+******
+j 4
+j 5
+jr
+j 2
+jal 3
+******
+jal 3
+jr
+j 5
+j 2
+jal 4
+******
+j 4
+jr
+j 2
+jal 5
+jal 3
+******
+jal 3
+jr
+jal 2
+j 5
+nop
+******
+nop
+j 3
+jal 5
+jr
+jal 4
+******
+j 5
+j 3
+nop
+jr
+jal 2
+******
+jal 4
+jr
+j 2
+jal 3
+nop
+******
+nop
+j 3
+j 5
+jr
+jal 4
+******
+j 5
+nop
+j 4
+jr
+jal 2
+******
+j 3
+j 4
+jal 5
+jr
+jal 2
+******
+j 2
+jal 3
+j 5
+jr
+jal 4
+******
+j 4
+j 3
+jr
+j 5
+jal 2
+******
+jal 3
+jr
+jal 4
+j 5
+jal 2
+******
+jal 2
+jal 4
+jr
+jal 5
+jal 3
+******
+j 2
+nop
+j 4
+j 5
+nop
+******
+jal 4
+jr
+j 5
+jal 3
+jal 2
+******
+nop
+jal 5
+jr
+j 3
+jal 4
+******
+jal 5
+jr
+j 2
+j 3
+jal 4
+******
+j 2
+j 4
+jr
+nop
+jal 3
+******
+nop
+j 4
+j 5
+j 3
+nop
+******
+j 2
+j 4
+jr
+jal 5
+jal 3
+******
+j 4
+jal 5
+jr
+j 2
+jal 3
+******
+nop
+j 5
+jr
+j 3
+jal 4
+******
+jal 4
+j 3
+jr
+jal 5
+jal 2
+******
+nop
+jal 3
+j 5
+jr
+jal 4
+******
+jal 3
+jr
+jal 5
+j 2
+jal 4
+******
+jal 3
+jr
+nop
+j 5
+jal 2
+******
+jal 2
+jal 4
+jr
+jal 3
+nop
+******
+jal 3
+jal 4
+jr
+j 5
+nop
+******
+nop
+jal 4
+jr
+jal 3
+nop
+******
+j 3
+jal 5
+jal 2
+jr
+jal 4
+******
+nop
+j 5
+j 4
+jr
+jal 3
+******
+nop
+j 5
+nop
+jr
+jal 3
+******
+j 2
+j 3
+j 5
+jr
+jal 4
+******
+j 3
+jr
+j 4
+nop
+jal 2
+******
+j 2
+jal 4
+jr
+jal 3
+nop
+******
+jal 4
+j 5
+jr
+jal 2
+jal 3
+******
+j 5
+j 3
+j 4
+jr
+jal 2
+******
+j 5
+jr
+j 4
+j 2
+jal 3
+******
+j 3
+jr
+j 4
+jal 5
+jal 2
+******
+j 5
+jr
+nop
+j 2
+jal 3
+******
+j 3
+jr
+nop
+jal 5
+jal 2
+******
+j 4
+nop
+jr
+j 5
+jal 2
+******
+nop
+nop
+jal 5
+jr
+jal 4
+******
+jal 2
+j 3
+jal 5
+jr
+jal 4
+******
+j 3
+j 4
+j 5
+jr
+jal 2
+******
+j 2
+j 5
+nop
+jr
+jal 3
+******
+j 4
+j 3
+jr
+jal 2
+nop
+******
+j 2
+jal 3
+jal 5
+jr
+jal 4
+******
+jal 3
+jr
+jal 4
+jal 2
+nop
+******
+jal 4
+jr
+j 5
+j 3
+jal 2
+******
+jal 4
+jr
+j 2
+j 5
+jal 3
+******
+j 3
+jr
+jal 4
+jal 2
+nop
+******
+jal 4
+jr
+jal 5
+jal 3
+jal 2
+******
+j 5
+nop
+nop
+jr
+jal 2
+******
+jal 2
+j 4
+jr
+j 5
+jal 3
+******
+j 4
+nop
+j 5
+j 2
+nop
+******
+jal 3
+jr
+nop
+jal 2
+nop
+******
+j 3
+j 4
+j 2
+j 5
+nop
+******
+jal 3
+jr
+jal 2
+nop
+nop
+******
+j 2
+j 3
+nop
+j 5
+nop
+******
+nop
+jal 3
+jal 5
+jr
+jal 4
+******
+jal 2
+nop
+j 5
+jr
+jal 4
+******
+jal 3
+jr
+jal 2
+jal 5
+nop
+******
+j 3
+jr
+j 5
+j 2
+jal 4
+******
+j 3
+jr
+jal 2
+j 5
+nop
+******
+j 4
+nop
+jr
+jal 2
+nop
+******
+nop
+jal 5
+j 4
+jr
+jal 3
+******
+jal 3
+jal 5
+j 4
+jr
+nop
+******
+jal 3
+jal 5
+nop
+jr
+nop
+******
+j 4
+j 3
+jr
+nop
+jal 2
+******
+nop
+jal 4
+jr
+j 5
+jal 3
+******
+jal 3
+jr
+jal 4
+nop
+jal 2
+******
+jal 4
+jr
+jal 5
+j 3
+jal 2
+******
+j 4
+j 3
+jr
+jal 5
+jal 2
+******
+jal 2
+jal 5
+nop
+jr
+jal 3
+******
+jal 5
+j 3
+jr
+j 2
+jal 4
+******
+jal 4
+jr
+jr
+jal 3
+jal 2
+******
+jal 4
+jal 3
+j 5
+jr
+nop
+******
+jal 5
+nop
+jr
+j 2
+jal 4
+******
+j 2
+nop
+j 5
+jr
+jal 4
+******
+jal 5
+nop
+nop
+jr
+jal 2
+******
+jal 3
+jr
+j 4
+j 5
+jal 2
+******
+j 2
+jal 4
+jal 5
+jr
+nop
+******
+j 2
+nop
+jal 5
+jr
+jal 4
+******
+jal 3
+jr
+nop
+nop
+jal 2
+******
+j 2
+j 4
+j 5
+j 3
+nop
+******
+jal 2
+jal 3
+j 5
+jr
+jal 4
+******
+j 2
+j 5
+jr
+j 3
+jal 4
+******
+jal 4
+nop
+j 5
+jr
+nop
+******
+jal 3
+jr
+nop
+jal 5
+jal 2
+******
+jal 2
+j 3
+j 5
+jr
+jal 4
+******
+jal 3
+jal 4
+jr
+jal 5
+nop
+******
+jal 3
+j 5
+j 4
+jr
+nop
+******
+jal 3
+j 5
+nop
+jr
+nop
+******
+j 2
+j 5
+j 4
+jr
+jal 3
+******
+jal 2
+jal 4
+jr
+j 5
+jal 3
+******
+nop
+jal 4
+jal 5
+jr
+nop
+******
+nop
+j 3
+j 4
+j 5
+nop
+******
+jal 3
+jal 5
+j 2
+jr
+jal 4
+******
+jal 4
+j 5
+jr
+jr
+jal 3
+******
+j 2
+jal 5
+j 4
+jr
+jal 3
+******
+jal 5
+j 4
+jr
+j 3
+jal 2
+******
+j 2
+jal 4
+jr
+j 5
+jal 3
+******
+jal 4
+jr
+j 2
+nop
+jal 3
+******
+jal 4
+j 5
+jr
+j 2
+jal 3
+******
+jal 4
+j 3
+jr
+j 5
+jal 2
+******
+jal 4
+jr
+j 2
+jal 5
+jal 3
+******
+jal 2
+nop
+jal 5
+jr
+jal 4
+******
+j 4
+jr
+j 2
+jal 3
+nop
+******
+jal 3
+jr
+j 4
+jal 2
+nop
+******
+jal 2
+j 5
+jr
+j 3
+jal 4
+******
+j 5
+jr
+j 2
+j 3
+jal 4
+******
+jal 2
+j 4
+jr
+nop
+jal 3
+******
+j 4
+jr
+jr
+jal 2
+jal 3
+******
+j 3
+jr
+jal 5
+j 2
+jal 4
+******
+jal 3
+jal 4
+jr
+nop
+nop
+******
+j 3
+j 4
+j 2
+nop
+nop
+******
+jal 2
+j 4
+jr
+jal 5
+jal 3
+******
+j 5
+j 4
+j 2
+jr
+jal 3
+******
+jal 4
+jal 5
+jr
+jal 2
+jal 3
+******
+j 3
+jr
+jal 4
+j 5
+jal 2
+******
+j 3
+j 5
+jal 2
+jr
+jal 4
+******
+j 2
+jal 5
+nop
+jr
+jal 3
+******
+jal 2
+j 5
+j 4
+jr
+jal 3
+******
+jal 4
+j 3
+j 5
+jr
+nop
+******
+jal 4
+nop
+jal 5
+jr
+nop
+******
+j 3
+jr
+nop
+j 5
+jal 2
+******
+j 4
+nop
+jr
+nop
+jal 2
+******
+j 3
+jr
+jal 2
+nop
+nop
+******
+jal 4
+j 5
+jr
+j 3
+nop
+******
+j 4
+jr
+j 5
+jal 3
+jal 2
+******
+j 3
+j 5
+j 2
+jr
+jal 4
+******
+j 4
+nop
+jr
+jal 5
+jal 2
+******
+jal 3
+j 4
+jr
+j 5
+nop
+******
+j 2
+j 3
+j 4
+j 5
+nop
+******
+nop
+j 4
+jr
+jal 3
+nop
+******
+nop
+jal 4
+jr
+nop
+jal 3
+******
+jal 4
+jal 3
+jal 5
+jr
+nop
+******
+jal 5
+jr
+nop
+j 2
+jal 3
+******
+j 2
+j 4
+jr
+jal 3
+nop
+******
+jal 4
+j 3
+jr
+jal 2
+nop
+******
+j 2
+jal 4
+j 5
+jr
+nop
+******
+nop
+jal 4
+jr
+jal 5
+jal 3
+******
+jal 2
+jal 3
+jal 5
+jr
+jal 4
+******
+jal 5
+nop
+j 4
+jr
+jal 2
+******
+j 3
+j 5
+nop
+j 2
+nop
+******
+j 5
+j 3
+jr
+j 2
+jal 4
+******
+jal 3
+jal 5
+jal 2
+jr
+jal 4
+******
+j 3
+jr
+j 4
+jal 2
+nop
+******
+j 3
+jr
+nop
+jal 2
+nop
+******
+jal 4
+jr
+jr
+jal 2
+jal 3
+******
+jal 5
+j 3
+nop
+jr
+jal 2
+******
+nop
+jal 4
+j 5
+jr
+nop
+******
+jal 4
+j 3
+jal 5
+jr
+nop
+******
+j 4
+jr
+j 2
+j 5
+jal 3
+******
+jal 2
+j 4
+jr
+jal 3
+nop
+******
+j 4
+jr
+jal 5
+jal 3
+jal 2
+******
+jal 4
+jal 5
+jr
+jr
+jal 3
+******
+jal 2
+jal 4
+jr
+nop
+jal 3
+******
+jal 4
+jal 5
+jr
+j 2
+jal 3
+******
+j 2
+jal 4
+jr
+nop
+jal 3
+******
+jal 4
+j 3
+jr
+nop
+jal 2
+******
+jal 3
+jal 5
+jr
+jr
+jal 4
+******
+j 2
+jal 4
+jr
+jal 5
+jal 3
+******
+jal 2
+jal 5
+jr
+j 3
+jal 4
+******
+j 4
+j 5
+jr
+jal 2
+jal 3
+******
+jal 3
+jr
+j 4
+nop
+jal 2
+******
+jal 3
+j 5
+jal 2
+jr
+jal 4
+******
+j 5
+j 4
+jr
+j 3
+jal 2
+******
+j 4
+j 5
+j 2
+j 3
+nop
+******
+jal 3
+jr
+j 4
+jal 5
+jal 2
+******
+j 2
+jal 5
+jr
+j 3
+jal 4
+******
+nop
+j 4
+jr
+j 5
+jal 3
+

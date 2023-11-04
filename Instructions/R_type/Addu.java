@@ -4,6 +4,6 @@ import Instructions.Rtype;
 
 public class Addu extends Rtype {
     public Addu() {
-        super("add", randomRegister(), randomRegister(), randomRegister());
+        super("addu", randomRegister(), randomRegister(), randomRegister());
     }
 }

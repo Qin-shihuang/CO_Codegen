@@ -12,6 +12,6 @@ public class Lw extends Itype {
         if (Global.isWrittenMemoryOffsetEmpty()) {
             return Integer.toString(Global.getRandom(0, 0x2ffc) & 0xfffffffc);
         }
-        return Integer.toString(Global.getRamdomWrittenMemoryOffset());
+        return Integer.toString(Global.getRamdomWrittenMemoryOffset() & 0xfffffffc);
     }
 }

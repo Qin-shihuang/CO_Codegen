@@ -23,6 +23,24 @@ public class Global {
             put("JAL", 9);
             put("JR", 10);
             put("NOP", 11);
+            put("J", 12);
+            put("AND", 13);
+            put("OR", 14);
+            put("ADDIU", 15);
+            put("SLL", 16);
+            put("SRL", 17);
+            put("SRA", 18);
+            put("SLT", 19);
+            put("SLLV", 20);
+            put("SRLV", 21);
+            put("SRAV", 22);
+            put("LH", 23);
+            put("LHU", 24);
+            put("SH", 25);
+            put("LB", 26);
+            put("LBU", 27);
+            put("SB", 28);
+            put("ANDI", 29);
         }
     };
     private static final HashMap<Integer, String> RegisterNames = new HashMap<>() {

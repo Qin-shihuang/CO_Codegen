@@ -51,10 +51,24 @@ public class Main {
             if (line.split("=")[0].trim().equals("MaxInstr")) {
                 Global.setMaxInstructions(Integer.parseInt(line.split("=")[1].trim()));
             } else if (line.split("=")[0].trim().equals("InstrSet")) {
-                String[] instrs = line.split("=")[1].trim().split(" ");
-                for (String instr : instrs) {
-                    Global.addInstruction(instr.toUpperCase());
-                }
+                do {
+                    line = line.split("#")[0].trim();
+                    if (line.contains("=")) {
+                        line = line.split("=")[1].trim();
+                    }
+                    String[] instrs = line.split("\\\\")[0].trim().split(" +");
+                    String LastInstruction = null;
+                    for (String instr : instrs) {
+                        if (instr.matches("[a-zA-Z]+")) {
+                            LastInstruction = instr.toUpperCase();
+                            Global.addInstruction(LastInstruction);
+                        } else if (instr.matches("[0-9]+")) {
+                            for (int i = 0; i < Integer.parseInt(instr) - 1; i++) {
+                                Global.addInstruction(LastInstruction);
+                            }
+                        }
+                    }
+                } while (line.contains("\\") && scanner.hasNextLine() && !(line = scanner.nextLine().trim()).isEmpty());
             } else if (line.split("=")[0].trim().equals("OutputFile")) {
                 Global.setOutput(new File(line.split("=")[1].trim()));
             }
