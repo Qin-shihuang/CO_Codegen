@@ -67,7 +67,7 @@ public class Generate {
             final int selectedLabelCount = ((maxLine - 50) / 50 + 1) * 5;
             HashSet<Integer> selectedLabels = new HashSet<>();
             while (selectedLabels.size() < selectedLabelCount) {
-                selectedLabels.add(Global.getRandom(50, maxLine));
+                selectedLabels.add(Global.getRandom(50, maxLine - 1));
             }
             selectedLabelsList = new ArrayList<>(selectedLabels);
             selectedLabelsList.sort(Comparator.naturalOrder());
